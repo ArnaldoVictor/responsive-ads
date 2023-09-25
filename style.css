@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --theme-color: #7158ef;
+  --bg-color: #ece9fd;
+  --text-color: rgba(10, 0, 57, 0.64);
+  --menu-color: #090039;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.6rem;
+  padding: 6rem 2.3rem;
+}
+
+main {
+  margin-inline: auto;
+  max-width: 32rem;
+  margin-top: 1.7rem;
+}
+
+h5 {
+  color: var(--theme-color);
+  letter-spacing: 3px;
+  line-height: 3.2rem;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--menu-color);
+  line-height: 4.8rem;
+}
+
+p {
+  margin-top: 1.5rem;
+  color: var(--text-color);
+  line-height: 3.2rem;
+}
+
+a {
+  display: block;
+  margin-top: 3.2rem;
+  color: var(--menu-color);
+  text-decoration: none;
+  line-height: 3.2rem;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  margin-top: 7.2rem;
+  color: var(--menu-color);
+  list-style: none;
+}
+
+ul li {
+  max-width: 32rem;
+  display: flex;
+  align-items: center;
+  gap: 3.8rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+ul span {
+  font-size: 7.2rem;
+  font-weight: 800;
+}
+
+/* media queries */
+@media (min-width: 50em) {
+  body {
+    padding: 8rem 13.5rem;
+  }
+
+  main,
+  header {
+    max-width: max-content;
+  }
+
+  main {
+    display: flex;
+    gap: 11.6rem;
+  }
+
+  ul li {
+    max-width: max-content;
+  }
+
+  .wrapper {
+    max-width: 48.4rem;
+  }
+}
